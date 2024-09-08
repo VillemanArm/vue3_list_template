@@ -23,7 +23,21 @@
                     class="modal__close"
                     @click="$emit('closeModal')"
                 >
-                    <RiCloseLargeLine />
+                    <svg
+                        width="6"
+                        height="8"
+                        viewBox="0 0 6 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke="#272928"
+                    >
+                        <path
+                            d="M1.33334 7.33337L4.66668 4.00004L1.33334 0.666707"
+                            stroke="evenodd"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
                 </div>
             </div>
             <div class="modal__content">
@@ -35,7 +49,6 @@
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import { RiCloseLargeLine } from 'vue-remix-icons'
 
 defineProps<{
     header?: string

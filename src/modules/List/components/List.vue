@@ -11,8 +11,8 @@
 <script setup lang="ts">
 import { reactive, ref, computed, onMounted, onUpdated, watch } from 'vue'
 //import {useRoute, useRouter} from 'vue-router'
-import { useListStore } from '@/stores/listStore'
-import ListItemComponent from './ListItemComponent.vue'
+import { useListStore } from '@/modules/List/listStore'
+import ListItemComponent from './ListItem.vue'
 
 defineProps<{
     msg?: string

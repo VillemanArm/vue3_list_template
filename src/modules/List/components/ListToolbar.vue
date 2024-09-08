@@ -22,8 +22,8 @@
 <script setup lang="ts">
 import { reactive, ref, computed, onMounted, onUpdated, watch } from 'vue'
 //import {useRoute, useRouter} from 'vue-router'
-import BaseModal from '@/components/ui/BaseModal.vue'
-import BaseDropList from '@/components/ui/BaseDropList.vue'
+import BaseModal from '@/shared/ui/BaseModal.vue';
+import BaseDropList from '@/shared/ui/BaseDropList.vue';
 
 defineProps<{
     msg?: string

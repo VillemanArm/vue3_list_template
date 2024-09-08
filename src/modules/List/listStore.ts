@@ -1,6 +1,6 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
-import ListApi from '@/common_functions/api/listApi'
+import ListApi from '@/modules/List/listApi'
 
 const listApi = new ListApi()
 

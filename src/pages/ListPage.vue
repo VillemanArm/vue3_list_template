@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { reactive, ref, computed, onMounted, onUpdated, watch } from 'vue'
 //import {useRoute} from 'vue-router'
-import ListModule from '@/components/ListModule/ListModule.vue'
+import ListModule from '@/modules/List/ListModule.vue'
 
 defineProps<{
     msg?: string

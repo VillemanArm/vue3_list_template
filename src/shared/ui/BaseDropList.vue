@@ -1,6 +1,13 @@
+<!-- 
+    Компонент представляет из себя плавно выпадающий список. 
+    Слот принимает ul или ol тег.
+    Принимаемы параметры:
+        isOpen: Boolean
+ -->
+
 <script setup lang="ts">
 defineProps<{
-    isOpen?: Boolean
+    isOpen: Boolean
 }>()
 </script>
 

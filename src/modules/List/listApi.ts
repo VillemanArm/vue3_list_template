@@ -1,10 +1,12 @@
-import settings from '@/settings.json'
-
 export default class ListApi {
-    protected serverURL = settings.serverURL
+    protected serverURL = import.meta.env.VITE_SERVER_URL
 
     getList = async () => {
-        fetch(`${this.serverURL}/new-research-add`).catch((error) => console.error('Error:', error))
+        const response = fetch(`${this.serverURL}list`)
+            .then((response) => response.json())
+            .catch((error) => console.error('Error:', error))
+
+        return response
     }
 
     addListItem = async (newResearch: FormData) => {

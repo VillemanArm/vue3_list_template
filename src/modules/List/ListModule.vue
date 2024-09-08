@@ -1,6 +1,6 @@
 <template>
-    <listToolbarComponent />
-    <listComponent />
+    <ListToolbar />
+    <List />
     <BasePagination
         :maxPage="maxPage"
         :currentPage="currentPage"
@@ -11,9 +11,9 @@
 <script setup lang="ts">
 import { reactive, ref, computed, onMounted, onUpdated, watch } from 'vue'
 //import {useRoute} from 'vue-router'
-import listComponent from './ListComponent.vue'
-import listToolbarComponent from './ListToolbarComponent.vue'
-import BasePagination from '@/components/ui/BasePagination.vue'
+import List from './components/List.vue'
+import ListToolbar from './components/ListToolbar.vue'
+import BasePagination from '@/shared/ui/BasePagination.vue'
 
 defineProps<{
     msg?: string
